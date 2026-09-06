@@ -1,0 +1,21 @@
+coordinator:
+  route:
+    system_instructions: './data/patterns/semantic_router/coordinator/route/system_instructions.txt'
+    user_instructions: './data/patterns/semantic_router/coordinator/route/user_instructions.txt'
+    response_schema: './data/patterns/semantic_router/coordinator/route/response_schema.json'
+  consolidate:
+    system_instructions: './data/patterns/semantic_router/coordinator/consolidate/system_instructions.txt'
+    user_instructions: './data/patterns/semantic_router/coordinator/consolidate/user_instructions.txt'
+delegate:
+  flight_search:
+    system_instructions: './data/patterns/semantic_router/delegate/flight_search/system_instructions.txt'
+    user_instructions: './data/patterns/semantic_router/delegate/flight_search/user_instructions.txt'
+    response_schema: './data/patterns/semantic_router/delegate/flight_search/response_schema.json'
+  hotel_search:
+    system_instructions: './data/patterns/semantic_router/delegate/hotel_search/system_instructions.txt'
+    user_instructions: './data/patterns/semantic_router/delegate/hotel_search/user_instructions.txt'
+    response_schema: './data/patterns/semantic_router/delegate/hotel_search/response_schema.json'
+  car_rental_search:
+    system_instructions: './data/patterns/semantic_router/delegate/car_rental_search/system_instructions.txt'
+    user_instructions: './data/patterns/semantic_router/delegate/car_rental_search/user_instructions.txt'
+    response_schema: './data/patterns/semantic_router/delegate/car_rental_search/response_schema.json'

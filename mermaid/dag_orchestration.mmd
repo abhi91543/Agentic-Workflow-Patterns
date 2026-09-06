@@ -1,0 +1,48 @@
+graph TD
+    classDef default fill:#f0f0f0,stroke:#333,stroke-width:2px;
+    classDef process fill:#E6F3FF,stroke:#91C4F2,stroke-width:2px;
+    classDef decision fill:#FFF2CC,stroke:#FFD966,stroke-width:2px;
+    classDef subagent fill:#E6FFE6,stroke:#82B366,stroke-width:2px;
+    classDef user fill:#FFE6E6,stroke:#FF9999,stroke-width:2px;
+    classDef dag fill:#F0E6FF,stroke:#C3A3F1,stroke-width:2px;
+
+    U["fa:fa-user Human User"]:::user
+    A["fa:fa-robot Coordinator Agent"]:::process
+    B["fa:fa-project-diagram DAG Workflow Template"]:::dag
+    C["Analyze DAG Structure"]:::process
+    D["Create Sub-agents for Tasks"]:::process
+    E["Orchestrate DAG Execution"]:::process
+
+    subgraph "DAG Execution"
+        F1["Task 1"]:::subagent
+        F2["Task 2"]:::subagent
+        F3["Task 3"]:::subagent
+        F4["Task 4"]:::subagent
+        F5["Task 5"]:::subagent
+        
+        F1 --> F2 & F3
+        F2 --> F4
+        F3 --> F4
+        F4 --> F5
+    end
+
+    G["Collect and Combine Results"]:::process
+    H["Generate Final Output"]:::process
+
+    U -->|Provides| B
+    U -->|Submits| A
+    A --> B --> C --> D --> E
+    E --> F1
+    E -.-> F2
+    E -.-> F3
+    E -.-> F4
+    E -.-> F5
+    F5 --> G --> H
+
+    subgraph "Sub-agent Process"
+        I["Receive Task"]:::subagent
+        J["Process Task"]:::subagent
+        K["Return Result"]:::subagent
+        
+        I --> J --> K
+    end

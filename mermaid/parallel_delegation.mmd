@@ -1,0 +1,56 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#E0F2F1',
+    'primaryTextColor': '#004D40',
+    'primaryBorderColor': '#00796B',
+    'lineColor': '#00796B',
+    'secondaryColor': '#FFF3E0',
+    'tertiaryColor': '#F1F8E9'
+  }
+}}%%
+flowchart TB
+    classDef default fill:#fff,stroke:#00796B,stroke-width:2px,rx:5,ry:5;
+    classDef coordinator fill:#E0F2F1,stroke:#00796B,stroke-width:3px,rx:10,ry:10;
+    classDef intent fill:#B2DFDB,stroke:#00796B,stroke-width:2px;
+    classDef delegate fill:#FFF3E0,stroke:#FF8F00,stroke-width:2px,rx:8,ry:8;
+    classDef llm fill:#E8EAF6,stroke:#3F51B5,stroke-width:2px,rx:5,ry:5;
+    classDef api fill:#FCE4EC,stroke:#C2185B,stroke-width:2px,rx:5,ry:5;
+    classDef process fill:#F1F8E9,stroke:#558B2F,stroke-width:2px,rx:5,ry:5;
+    classDef note fill:#FFF9C4,stroke:#FBC02D,stroke-width:1px,stroke-dasharray: 5 5;
+
+    U["👤 User Input"]:::default
+    TP["🧭 TravelPlannerAgent<br>(Coordinator)"]:::coordinator
+    ER["🔍 Entity Recognition"]:::intent
+    E["🏷️ Entities"]:::default
+    LLM["🧠 LLM"]:::llm
+    R["🔄 Query Reformulation"]:::process
+    S["🌐 SERP API"]:::api
+    W["📄 Web Search Results"]:::default
+    CO["📝 Consolidate Response"]:::process
+    O["💬 Final Output"]:::default
+    
+    U ==> TP
+    TP ==> ER
+    ER ==> E
+    E ==> Delegates
+    Delegates ==> R
+    R ==> S
+    S ==> W
+    W ==> TP
+    TP ==> CO
+    CO ==> O
+    
+    TP -.-o |Uses| LLM
+    
+    subgraph Delegates ["Delegates"]
+        direction LR
+        F["✈️ FlightAgent"]:::delegate
+        H["🏨 HotelAgent"]:::delegate
+        C["🚗 CarRentalAgent"]:::delegate
+    end
+    
+    %% Note about parallel execution
+    ParallelNote["Note: Delegates are executed in parallel"]:::note
+    
+    style Delegates fill:#FFF8E1,stroke:#FFA000,stroke-width:2px,rx:10,ry:10;

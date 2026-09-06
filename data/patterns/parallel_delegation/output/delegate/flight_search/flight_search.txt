@@ -1,0 +1,14 @@
+# Flights from New York to Dallas
+
+- The cheapest time to fly from New York to Dallas is typically in September. The most expensive month is typically July. Prices in January are usually between $120 and $310. 
+- On average, Thursday is the cheapest day to fly, and Sunday is the most expensive.
+- When booking flights, Thursday is the best day to book. This will help you save 6% to 13% compared to booking on a Friday. 
+- For domestic flights, booking at least a month in advance can save you 24%. For international flights, book 2 months in advance to save 10%. 
+- The cheapest route for a one-way flight is from Newark Airport to Dallas/Fort Worth Airport.
+- The average price for a round-trip flight from New York LaGuardia Airport to Dallas/Fort Worth Airport is $139.
+
+## Citations
+
+1. https://www.expedia.com/lp/flights/nyc/dfw/new-york-to-dallas
+2. https://www.kayak.com/flight-routes/New-York-NYC/Dallas-A78
+3. https://www.google.com/travel/flights/flights-from-new-york-to-dallas.html

@@ -1,0 +1,1 @@
+For the user-provided query `{query}`, extract key entities to format as function arguments for Google Search API calls.

@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "extracted_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "key_info": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "characters": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "themes": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "plot_points": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                }
+              },
+              "required": ["characters", "themes", "plot_points"]
+            }
+          }
+        },
+        "required": ["id", "key_info"]
+      }
+    }
+  },
+  "required": ["extracted_items"]
+}

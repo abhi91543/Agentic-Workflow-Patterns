@@ -1,0 +1,6 @@
+Please review the following research article:
+
+{article}
+
+Provide a comprehensive peer review following the structure and guidelines outlined in the previous instructions. 
+Your review should include a summary, assessment of strengths and weaknesses, detailed comments, and an overall recommendation.

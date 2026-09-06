@@ -1,0 +1,30 @@
+## History
+{history}
+
+Based on the provided history above, revise the latest version of the draft using the guide below.
+
+# Revision Guide
+
+## Review and Analyze
+- Examine conversation history
+- Focus on original draft and reviewer feedback
+- List and categorize all issues from feedback
+
+## Systematic Revision
+- For each issue:
+  - Identify the problem
+  - Implement necessary changes
+  - Briefly explain rationale
+
+## Enhance and Refine
+- Improve overall coherence and clarity
+- Reorganize structure for better flow
+- Maintain professional, clear language
+
+## Final Checks
+- Retain all key points unless advised to remove
+- Proofread for errors and inconsistencies
+- Indicate this is a revised version
+
+## Deliverable
+Provide concise, revised instructions addressing all feedback points.

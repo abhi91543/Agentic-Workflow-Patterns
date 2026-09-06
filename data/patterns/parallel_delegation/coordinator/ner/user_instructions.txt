@@ -1,0 +1,1 @@
+Analyze the user query `{query}` to identify intents and extract relevant entities for flight, hotel, and car rental searches simultaneously, handling multiple intents per query and classifying out-of-scope requests as unknown.

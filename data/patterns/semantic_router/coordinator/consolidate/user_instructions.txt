@@ -1,0 +1,5 @@
+Synthesize the user query `{query}` with web search results (provided below) to provide a clear, informative, and user-friendly response that directly addresses the user's needs.
+
+### Web search results
+
+`{summary}`

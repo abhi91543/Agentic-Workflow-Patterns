@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+      "preprocessed_docs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "title": { "type": "string" },
+            "content": { "type": "string" }
+          },
+          "required": ["id", "title", "content"]
+        }
+      }
+    },
+    "required": ["preprocessed_docs"]
+  }
+  

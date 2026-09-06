@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+      "user_query": {
+        "type": "string",
+        "description": "The original user-provided query."
+      },
+      "web_search_query": {
+        "type": "string",
+        "description": "The query transformed for optimized web search."
+      }
+    },
+    "required": ["user_query", "web_search_query"]
+  }
+  

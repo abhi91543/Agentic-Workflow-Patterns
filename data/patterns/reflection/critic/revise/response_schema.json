@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+      "summary": {
+        "type": "string"
+      },
+      "strengths": {
+        "type": "string"
+      },
+      "weaknesses": {
+        "type": "string"
+      },
+      "minor_issues": {
+        "type": "string"
+      },
+      "overall_recommendation": {
+        "type": "string"
+      }
+    },
+    "required": ["summary", "strengths", "weaknesses", "minor_issues", "overall_recommendation"]
+  }

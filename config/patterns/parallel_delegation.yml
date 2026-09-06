@@ -1,0 +1,21 @@
+coordinator:
+  ner:
+    system_instructions: './data/patterns/parallel_delegation/coordinator/ner/system_instructions.txt'
+    user_instructions: './data/patterns/parallel_delegation/coordinator/ner/user_instructions.txt'
+    response_schema: './data/patterns/parallel_delegation/coordinator/ner/response_schema.json'
+  consolidate:
+    system_instructions: './data/patterns/parallel_delegation/coordinator/consolidate/system_instructions.txt'
+    user_instructions: './data/patterns/parallel_delegation/coordinator/consolidate/user_instructions.txt'
+delegate:
+  flight_search:
+    system_instructions: './data/patterns/parallel_delegation/delegates/flight_search/system_instructions.txt'
+    user_instructions: './data/patterns/parallel_delegation/delegates/flight_search/user_instructions.txt'
+    response_schema: './data/patterns/parallel_delegation/delegates/flight_search/response_schema.json'
+  hotel_search:
+    system_instructions: './data/patterns/parallel_delegation/delegates/hotel_search/system_instructions.txt'
+    user_instructions: './data/patterns/parallel_delegation/delegates/hotel_search/user_instructions.txt'
+    response_schema: './data/patterns/parallel_delegation/delegates/hotel_search/response_schema.json'
+  car_rental_search:
+    system_instructions: './data/patterns/parallel_delegation/delegates/car_rental_search/system_instructions.txt'
+    user_instructions: './data/patterns/parallel_delegation/delegates/car_rental_search/user_instructions.txt'
+    response_schema: './data/patterns/parallel_delegation/delegates/car_rental_search/response_schema.json'

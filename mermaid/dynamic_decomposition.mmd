@@ -1,0 +1,34 @@
+graph TD
+    classDef default fill:#f0f0f0,stroke:#333,stroke-width:2px;
+    classDef process fill:#E6F3FF,stroke:#91C4F2,stroke-width:2px;
+    classDef decision fill:#FFF2CC,stroke:#FFD966,stroke-width:2px;
+    classDef subagent fill:#E6FFE6,stroke:#82B366,stroke-width:2px;
+
+    A["fa:fa-robot Coordinator Agent<br/>Receives Complex Task"]:::process
+    B[LLM Generates Subtasks]:::process
+    C[Parse LLM Output]:::process
+    D[Create Sub-agents]:::process
+    E{Execute Subtasks in Parallel}:::decision
+    F1["fa:fa-robot Sub-agent 1<br/>Processes Task"]:::subagent
+    F2["fa:fa-robot Sub-agent 2<br/>Processes Task"]:::subagent
+    F3["fa:fa-robot Sub-agent 3<br/>Processes Task"]:::subagent
+    FN["fa:fa-robot Sub-agent N<br/>Processes Task"]:::subagent
+    G[Collect Results]:::process
+    H[Combine Results]:::process
+    I[Generate Final Output]:::process
+
+    A --> B --> C --> D --> E
+    E -->|SubTask 1| F1
+    E -->|SubTask 2| F2
+    E -->|SubTask 3| F3
+    E -.-|SubTask N| FN
+    F1 & F2 & F3 & FN --> G --> H --> I
+
+    subgraph "Sub-agent Process"
+        J[Receive Task]:::subagent
+        K[Prepare LLM Input]:::subagent
+        L[Call LLM for Processing]:::subagent
+        M[Return Result to Coordinator]:::subagent
+        
+        J --> K --> L --> M
+    end

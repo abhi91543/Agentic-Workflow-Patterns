@@ -1,0 +1,57 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#e0f7fa',
+    'primaryTextColor': '#006064',
+    'primaryBorderColor': '#00838f',
+    'lineColor': '#00838f',
+    'secondaryColor': '#fff3e0',
+    'tertiaryColor': '#f1f8e9',
+    'fontFamily': 'Arial, sans-serif'
+  }
+}}%%
+
+flowchart TB
+    classDef default fill:#fff,stroke:#00838f,stroke-width:2px,rx:5,ry:5;
+    classDef search fill:#e0f7fa,stroke:#00838f,stroke-width:2px,rx:5,ry:5;
+    classDef scrape fill:#fff3e0,stroke:#ff8f00,stroke-width:2px,rx:5,ry:5;
+    classDef summarize fill:#f1f8e9,stroke:#558b2f,stroke-width:2px,rx:5,ry:5;
+    classDef process fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,rx:5,ry:5;
+    classDef llm fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px,rx:5,ry:5;
+    classDef api fill:#ffebee,stroke:#c62828,stroke-width:2px,rx:5,ry:5;
+
+    LLM["🧠 Large Language Model"]:::llm
+    S["🔍 Web Search"]:::search
+    A["🌐 SERP API"]:::api
+    W["🕷️ Web Scrape"]:::scrape
+    C["📊 Consolidate"]:::summarize
+    Q["❓ Query<br>Formulation"]:::process
+    E["📥 Data<br>Extraction"]:::process
+    M["📝 Summary<br>Generation"]:::process
+
+    LLM -->|0| S & W & C
+    S -->|1| Q -->|2| A -->|3| W
+    W -->|4| E -->|5| C
+    C -->|6| M
+
+    subgraph Search ["Search Phase"]
+        S
+        Q
+        A
+    end
+
+    subgraph Scrape ["Scrape Phase"]
+        W
+        E
+    end
+
+    subgraph Summarize ["Summarize Phase"]
+        C
+        M
+    end
+
+    style Search fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,rx:10,ry:10;
+    style Scrape fill:#fff8e1,stroke:#ffa000,stroke-width:2px,rx:10,ry:10;
+    style Summarize fill:#e8f5e9,stroke:#4caf50,stroke-width:2px,rx:10,ry:10;
+
+    linkStyle default stroke:#00838f,stroke-width:2px;

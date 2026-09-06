@@ -1,0 +1,4 @@
+Write a one-page academic article on the given topic below and its significance, suitable for graduate students and researchers.
+Balance technical depth with clarity.
+
+Topic: `{topic}`

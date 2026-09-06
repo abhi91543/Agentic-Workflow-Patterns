@@ -1,0 +1,1 @@
+Analyze the user query `{query}` to determine if the intent is for **Flight Search**, **Hotel Search**, **Car Rental Search**, or **NA** (Not Applicable).

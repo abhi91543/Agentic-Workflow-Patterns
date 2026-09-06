@@ -1,0 +1,4 @@
+# This is project-level config params
+project_id: abhishek-genai-bb
+credentials_json: ./credentials/key.json
+region: us-central1

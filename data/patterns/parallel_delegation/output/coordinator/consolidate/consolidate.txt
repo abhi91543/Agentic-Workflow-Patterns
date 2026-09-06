@@ -1,0 +1,5 @@
+Here is your finalized travel itinerary:
+- Flight: Booked from New York to Dallas.
+- Hotel: Downtown Dallas confirmed.
+- Car: Rental car secured for next week.
+Have a great trip!

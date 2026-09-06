@@ -1,0 +1,116 @@
+{
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "string",
+      "description": "The original user query."
+    },
+    "intent": {
+      "type": "string",
+      "description": "The detected intent of the query.",
+      "enum": ["FLIGHT", "HOTEL", "CAR_RENTAL", "UNKNOWN"],
+      "default": "UNKNOWN"
+    },
+    "entities": {
+      "type": "object",
+      "properties": {
+        "FLIGHT": {
+          "type": "object",
+          "properties": {
+            "duration": {
+              "type": "string",
+              "description": "The duration of the trip, if specified.",
+              "default": "NA"
+            },
+            "destination": {
+              "type": "string",
+              "description": "The destination of the trip.",
+              "default": "NA"
+            },
+            "date": {
+              "type": "string",
+              "description": "The date or month of the trip.",
+              "default": "NA"
+            },
+            "origin": {
+              "type": "string",
+              "description": "The origin location for flights, if specified.",
+              "default": "NA"
+            },
+            "num_passengers": {
+              "type": "string",
+              "description": "The number of passengers, if specified.",
+              "default": "NA"
+            }
+          }
+        },
+        "HOTEL": {
+          "type": "object",
+          "properties": {
+            "duration": {
+              "type": "string",
+              "description": "The duration of the stay, if specified.",
+              "default": "NA"
+            },
+            "destination": {
+              "type": "string",
+              "description": "The location of the hotel.",
+              "default": "NA"
+            },
+            "date": {
+              "type": "string",
+              "description": "The date or month of the stay.",
+              "default": "NA"
+            },
+            "num_passengers": {
+              "type": "string",
+              "description": "The number of guests, if specified.",
+              "default": "NA"
+            },
+            "hotel_amenities": {
+              "type": "string",
+              "description": "Desired hotel amenities, if specified. Multiple amenities are comma-separated.",
+              "default": "NA"
+            }
+          }
+        },
+        "CAR_RENTAL": {
+          "type": "object",
+          "properties": {
+            "duration": {
+              "type": "string",
+              "description": "The duration of the rental, if specified.",
+              "default": "NA"
+            },
+            "date": {
+              "type": "string",
+              "description": "The date or month of the rental.",
+              "default": "NA"
+            },
+            "car_type": {
+              "type": "string",
+              "description": "The type of car for rental, if specified.",
+              "default": "NA"
+            },
+            "pickup_location": {
+              "type": "string",
+              "description": "The pickup location for car rentals, if specified.",
+              "default": "NA"
+            },
+            "dropoff_location": {
+              "type": "string",
+              "description": "The dropoff location for car rentals, if specified.",
+              "default": "NA"
+            }
+          }
+        },
+        "UNKNOWN": {
+          "type": "object",
+          "description": "No specific entities for UNKNOWN intent.",
+          "default": {}
+        }
+      }
+    }
+  },
+  "required": ["query", "intent", "entities"]
+}

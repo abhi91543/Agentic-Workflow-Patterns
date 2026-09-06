@@ -1,0 +1,11 @@
+Synthesize the user query `{query}` with web search results (provided below) to provide a clear, informative, and user-friendly response that directly addresses the user's needs.
+
+## Web search results
+### Flight summary: 
+{flight_summary}
+
+#### otel summary: 
+{hotel_summary}
+
+## Car rental summary: 
+{car_rental_summary}

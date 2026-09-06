@@ -1,0 +1,77 @@
+{
+  "extracted_items": [
+    {
+      "id": "doc1",
+      "key_info": [
+        {
+          "characters": [
+            "Amelia"
+          ],
+          "themes": [
+            "Resilience",
+            "Legacy",
+            "Duty",
+            "Courage",
+            "Loss",
+            "Isolation"
+          ],
+          "plot_points": [
+            "Amelia grows up in a remote village with her father, the lighthouse keeper.",
+            "Her mother's absence is a major factor in her life.",
+            "Amelia's father falls ill, leaving her to take over his duties.",
+            "Amelia faces doubts from the villagers but remains determined.",
+            "She rescues a fishing boat during a storm, proving her strength and earning the villagers' respect.",
+            "Amelia realizes her purpose and legacy as the lighthouse keeper."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc2",
+      "key_info": [
+        {
+          "characters": [
+            "Marcus"
+          ],
+          "themes": [
+            "Redemption",
+            "Guilt",
+            "Forgiveness",
+            "Art as Therapy",
+            "The Power of Art"
+          ],
+          "plot_points": [
+            "Marcus is a reclusive artist haunted by a past accident.",
+            "He receives a letter from a dying friend who wishes to see his art.",
+            "Marcus reluctantly agrees to paint and finds catharsis through the process.",
+            "The painting becomes a symbol of his redemption and renewed purpose.",
+            "Marcus delivers the painting to his friend and rediscovers his passion for art."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doc3",
+      "key_info": [
+        {
+          "characters": [
+            "Elena Reyes"
+          ],
+          "themes": [
+            "Lost civilizations",
+            "Past and present",
+            "Identity",
+            "Fate"
+          ],
+          "plot_points": [
+            "Elena discovers an ancient manuscript",
+            "Elena experiences strange occurrences and dreams",
+            "Elena is driven by an inexplicable compulsion to decipher the manuscript",
+            "Elena vanishes after translating the final passage",
+            "Elena's disappearance is linked to an ancient city and a mural depicting her as a high priestess"
+          ]
+        }
+      ]
+    }
+  ]
+}

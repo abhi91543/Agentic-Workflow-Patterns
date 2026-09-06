@@ -1,0 +1,22 @@
+{
+  "docs": [
+    {
+      "id": "doc1",
+      "title": "**The Lighthouse Keeper's Daughter**",
+      "content": "In a remote coastal village, Amelia grew up in the shadow of the lighthouse her father tended. The rhythmic sweep of light across dark waters was the heartbeat of her childhood. Her mother's absence, a void as vast as the sea, shaped her quiet resilience.\nAt eighteen, Amelia's world shattered when her father fell ill. The lighthouse, their lifeline, threatened to go dark. With trembling hands but unwavering determination, she took up his mantle, climbing the winding stairs each night to keep the light burning.\nThe villagers whispered doubts, but Amelia stood firm. Through howling gales and crashing waves, she kept vigil. Her resolve was tested one stormy night when distress signals pierced the gloom. A fishing boat, lost and floundering.\nAmelia's light cut through the darkness, guiding the vessel to safety. As dawn broke, the rescued fishermen spoke of a beacon that shone brighter than ever before. The village elders, humbled, recognized her strength.\nIn that moment, Amelia understood. The lighthouse had never just been her father's duty\u2014it was her inheritance, her purpose. She had become the light that others looked to in the darkness, a legacy forged in solitude and illuminated by courage.",
+      "filename": "./data/patterns/dag_orchestration/docs/doc1.txt"
+    },
+    {
+      "id": "doc2",
+      "title": "## The Color of Redemption",
+      "content": "Marcus had once been celebrated for his visionary art. Now, he was a recluse, haunted by the tragic accident his recklessness had caused. His brushes lay untouched, canvases blank, the vibrant colors of his past faded to gray.\nA letter arrived, bearing news of an old friend's terminal illness. Her dying wish: to see one last Marcus original. Guilt warred with fear as he stood before an empty canvas, the weight of expectation crushing.\nWith trembling hands, Marcus began to paint. Hours blended into days as he poured his anguish, regret, and hope onto the canvas. The act of creation became a catharsis, each brushstroke a step towards forgiveness\u2014of himself and others.\nAs he neared completion, Marcus realized the painting wasn't just for his friend. It was a bridge from his past to a future he'd thought lost. The finished piece hummed with raw emotion and renewed purpose.\nMarcus delivered the painting in person, witnessing the joy it brought to his friend's final days. As word spread of his return, the art world buzzed with anticipation. But Marcus no longer cared about fame. He had rediscovered his truth: that art's greatest power lay not in accolades, but in its ability to heal, connect, and illuminate the human spirit.",
+      "filename": "./data/patterns/dag_orchestration/docs/doc3.txt"
+    },
+    {
+      "id": "doc3",
+      "title": "## The Return of the Forgotten Priestess",
+      "content": "Professor Elena Reyes clutched the ancient manuscript, her heart racing. After decades of research, she had uncovered the last known text of a long-dead civilization. The symbols danced before her eyes, holding secrets lost to time.\nAs Elena delved deeper into translation, strange occurrences plagued her. Vivid dreams of a thriving ancient city. Whispers in an unknown tongue echoing in empty rooms. The line between past and present blurred, reality shifting like sand beneath her feet.\nColleagues grew concerned, urging her to step back. But Elena pressed on, driven by an inexplicable compulsion. With each deciphered word, she felt a piece of herself slipping away, replaced by something... other.\nOn the night she translated the final passage, Elena vanished. Her office was found in disarray, the manuscript open on her desk. The last entry in her journal, written in a script no one recognized, spoke of returning home.\nYears later, an archaeological dig uncovered a new chamber in the ancient city. On the wall, a mural depicted a woman with Elena's face, adorned in the robes of a high priestess. The inscription hailed her as the one who bridged worlds, keeper of forgotten wisdom.",
+      "filename": "./data/patterns/dag_orchestration/docs/doc2.txt"
+    }
+  ]
+}

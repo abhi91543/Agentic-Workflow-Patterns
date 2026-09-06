@@ -1,0 +1,4 @@
+Given the user-provided query `{query}` and the accompanying scraped content from relevant webpages below, 
+please follow the provided guidelines to generate a comprehensive summary with appropriate citations:
+
+{scraped_content}

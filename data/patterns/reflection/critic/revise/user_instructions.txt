@@ -1,0 +1,28 @@
+## History
+{history}
+
+Based on the provided history above, look at the revisions made to the draft addressing the feedback from the review, especially focusing on the final state of the draft. 
+Suggest if any further feedback is necessary.
+
+# Review Guide
+
+## Review and Analysis
+- Carefully review the revisions made in response to previous feedback.
+- Focus on the final version of the draft and the feedback it received.
+- Identify any additional issues or areas for improvement that may have been overlooked.
+
+## Systematic Revision
+- For each newly identified issue:
+  - Clearly describe the problem or area that requires improvement.
+  - Propose and implement the necessary changes.
+  - Provide a brief explanation for the suggested changes.
+
+## Final Checks
+- Ensure that all critical points from the previous feedback have been addressed.
+- Conduct a thorough proofreading to eliminate any errors or inconsistencies.
+- Clearly mark this as a revised version, indicating it has been updated based on additional feedback.
+
+## Deliverable
+- Offer a final review of the revised draft. 
+- Address only new issues or areas for improvement. 
+- If previous issues have been resolved, there is no need to revisit them.
