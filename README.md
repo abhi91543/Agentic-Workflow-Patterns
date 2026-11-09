@@ -7,7 +7,6 @@
 ![Agentic Workflow](./img/agentic.png)
 
 ## Table of Contents
-- [Interview Preparation Master Guide 📘](./INTERVIEW_GUIDE.md)
 - [Overview](#overview)
 - [Patterns Overview](#patterns-overview)
 - [Getting Started](#getting-started)
